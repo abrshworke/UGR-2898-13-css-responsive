@@ -1,0 +1,395 @@
+
+
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* Header Section */
+
+
+
+header {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.logo-image {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-self: end; 
+  
+}
+
+nav span {
+  margin: 5px 0;
+}
+
+nav span a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+
+
+
+main {
+  padding: 15px;
+}
+
+
+
+/* About Me Section */
+
+
+.main-aboutme {
+  text-align: center;
+  background-color: #3298db;
+  border-radius: 10px;
+  color: white;
+  margin: 0 auto;
+  display: grid; 
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-aboutme img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.text-aboutme {
+  font-size: 18px;
+  font-size: 26px;
+  color: white;
+}
+
+.text-aboutme h1 {
+  font-size: 40px;
+}
+
+
+
+
+/*hobbies section*/
+
+
+
+.hobbies-c {
+  display: grid;
+  grid-template-rows: auto auto; 
+  grid-template-columns: 2fr 1fr; 
+  gap: 20px;
+  background-color: #3498db;
+  border-radius: 16px;
+  padding: 20px; 
+}
+
+.hobbies-vid video {
+  max-width: 80%;
+  height: auto;
+  margin-left: 20px;
+}
+
+.hobbies-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hobbies-subc {
+  display: grid;
+  grid-template-rows: 2fr 1fr; 
+}
+
+.hobbies-vid {
+  grid-column: span 2; 
+}
+
+.hobbies-para {
+  color: white;
+  margin-left: 20px;
+  
+
+}
+
+.hobbies-img {
+  margin-bottom: 20px;
+  
+  margin-left: 20px;
+}
+
+
+
+
+
+
+
+/* CV Section */
+
+
+
+.cv-m {
+  display: grid; 
+  grid-template-columns: 1fr;
+  margin: 20px;
+  background-color: #3298db;
+  border-radius: 25px;
+  
+}
+
+.cv-image img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.cv {
+  font-size: 34px;
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+}
+
+
+
+
+
+/* Education Section */
+
+
+
+
+.education-m {
+  display: grid; 
+  
+  padding: 15px;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #3498db;
+  margin: 20px 30px;
+}
+
+.button-education {
+  font-size: 16px;
+  background-color: white;
+  color: #3298db;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: default;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.education-entry {
+  display: grid; 
+  grid-template-columns: 1fr;
+  align-items: center;
+  max-width: 100%;
+}
+
+.education-details p {
+  color: #fff;
+}
+
+.a {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: default;
+}
+
+
+
+
+/* Skill Section */
+
+
+
+.skill-m {
+  display: grid; 
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding: 15px;
+  background-color: #3298db;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.container {
+  display: grid; 
+  gap: 20px;
+  align-items: center;
+}
+
+.section {
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.button-tech,
+.button-soft,
+.button-tool {
+  padding: 8px 15px;
+  font-size: 16px;
+}
+
+.column {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.column h3 {
+  font-size: 18px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 5px;
+}
+
+.column li {
+  margin-bottom: 5px;
+}
+
+
+
+
+/* Footer Section */
+
+
+
+
+footer {
+  background-color: #343;
+  padding: 10px;
+  text-align: center;
+}
+
+.socials {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
+  justify-self: end; 
+  gap: 5px; 
+  margin-top: 10px;
+  cursor: none;
+}
+
+.socials a {
+  justify-self: end; 
+}
+
+.socials img {
+  width: 30px;
+  height: auto;
+}
+
+
+
+
+/* Style for the four-dash symbol */
+
+
+
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 36px;
+  justify-self: end;
+  color: white;
+  
+}
+
+.menu-icon:before {
+  content: '\2261'; 
+}
+
+
+nav {
+  display: none;
+}
+
+
+.menu-icon:target + nav {
+  display: grid;
+  align-self:center ;
+
+}
+
+
+
+
+@media only screen and (max-width: 100%) {
+  header {
+    grid-template-columns: 1fr;
+    justify-self: start;
+  }
+
+  nav span {
+    display: none; 
+  }
+
+  
+  nav {
+    
+    justify-self: start;
+  }
+
+  .mobile-nav a {
+    color: white;
+  }
+
+  .menu-icon {
+    display: block; 
+  }
+
+
+  .image-aboutme img,
+  .cv-image img {
+    margin-left: 0;
+    align-items: self-start;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .socials a {
+    margin: 0 4px;
+  }
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
