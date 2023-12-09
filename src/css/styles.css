@@ -1,9 +1,11 @@
 
+/* General styles */
 
 
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+      
 }
 
 
@@ -11,31 +13,29 @@ body {
 /* Header Section */
 
 
-
 header {
   background-color: black;
   color: white;
   padding: 10px;
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo-image {
   width: 70px;
   margin-bottom: 10px;
+  align-items: self-start;
 }
 
-
 nav {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  justify-self: end; 
-  
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 nav span {
-  margin: 5px 0;
+  margin: 5px 10px;
 }
 
 nav span a {
@@ -46,9 +46,20 @@ nav span a {
 
 
 
+
+/* Main section */
+
 main {
   padding: 15px;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -60,23 +71,23 @@ main {
   background-color: #3298db;
   border-radius: 10px;
   color: white;
-  margin: 0 auto;
-  display: grid; 
-  grid-template-columns: 1fr;
-  gap: 20px;
-  padding: 20px;
+  margin: 20px auto; 
+  padding: 20px; 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+   
 }
 
 .image-aboutme img {
-  max-width: 100%;
+  max-width: 100%; 
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
 }
 
 .text-aboutme {
-  font-size: 18px;
   font-size: 26px;
-  color: white;
+  text-align: center; 
 }
 
 .text-aboutme h1 {
@@ -86,52 +97,63 @@ main {
 
 
 
-/*hobbies section*/
+
+
+
+
+
+
+
+
+/* Hobbies Section */
 
 
 
 .hobbies-c {
-  display: grid;
-  grid-template-rows: auto auto; 
-  grid-template-columns: 2fr 1fr; 
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap; 
   background-color: #3498db;
   border-radius: 16px;
-  padding: 20px; 
-}
-
-.hobbies-vid video {
-  max-width: 80%;
-  height: auto;
-  margin-left: 20px;
-}
-
-.hobbies-img img {
-  max-width: 100%;
-  height: auto;
-}
-
-.hobbies-subc {
-  display: grid;
-  grid-template-rows: 2fr 1fr; 
+  
+  
 }
 
 .hobbies-vid {
-  grid-column: span 2; 
+  flex: 1;
+  
+}
+
+.hobbies-vid video {
+  max-width: 70%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  
+}
+
+.hobbies-subc {
+  flex: 1;
+  flex-direction: column;
 }
 
 .hobbies-para {
+  flex: 1;
   color: white;
-  margin-left: 20px;
   
-
 }
 
 .hobbies-img {
-  margin-bottom: 20px;
-  
-  margin-left: 20px;
+  flex: 1;
 }
+
+.hobbies-img img {
+  width: 70%; 
+  
+}
+
+
+
 
 
 
@@ -144,18 +166,18 @@ main {
 
 
 .cv-m {
-  display: grid; 
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   margin: 20px;
   background-color: #3298db;
   border-radius: 25px;
-  
 }
 
 .cv-image img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .cv {
@@ -169,19 +191,26 @@ main {
 
 
 
+
+
+
+
 /* Education Section */
 
 
 
 
 .education-m {
-  display: grid; 
-  
+  display: flex;
+  flex-direction: column;
   padding: 15px;
   align-items: center;
   border-radius: 20px;
   background-color: #3498db;
-  margin: 20px 30px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
 }
 
 .button-education {
@@ -194,12 +223,11 @@ main {
   border: none;
   cursor: default;
   margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 .education-entry {
-  display: grid; 
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   max-width: 100%;
 }
@@ -214,7 +242,16 @@ main {
   padding: 8px 16px;
   border: none;
   cursor: default;
+  margin-right: 22px;
+  margin-bottom: 10px;
+  align-content: center;
+  
 }
+
+
+
+
+
 
 
 
@@ -223,9 +260,10 @@ main {
 
 
 
+
 .skill-m {
-  display: grid; 
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 15px;
   background-color: #3298db;
@@ -234,12 +272,13 @@ main {
 }
 
 .container {
-  display: grid; 
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .section {
+  flex: 1;
   margin: 10px 0;
   padding: 10px;
   text-align: center;
@@ -273,6 +312,14 @@ main {
 
 
 
+
+
+
+
+
+
+
+
 /* Footer Section */
 
 
@@ -285,16 +332,14 @@ footer {
 }
 
 .socials {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
-  justify-self: end; 
-  gap: 5px; 
+  display: flex;
+  justify-content: end;
   margin-top: 10px;
   cursor: none;
 }
 
 .socials a {
-  justify-self: end; 
+  margin: 0 10px;
 }
 
 .socials img {
@@ -305,7 +350,13 @@ footer {
 
 
 
-/* Style for the four-dash symbol */
+
+
+
+
+
+
+/* Menu icon for mobile design */
 
 
 
@@ -315,42 +366,62 @@ footer {
   font-size: 36px;
   justify-self: end;
   color: white;
-  
+  display: none; 
 }
 
 .menu-icon:before {
-  content: '\2261'; 
+  content: '\2261';
 }
-
 
 nav {
   display: none;
 }
 
-
 .menu-icon:target + nav {
-  display: grid;
-  align-self:center ;
-
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 
 
 
 
-@media only screen and (max-width: 100%) {
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Styles */
+
+
+
+
+@media only screen and (max-width: 599px) {
+
+
   header {
-    grid-template-columns: 1fr;
-    justify-self: start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   nav span {
-    display: none; 
+    display: none;
+    flex: 1;
+    margin: 0 10px;
   }
 
-  
   nav {
-    
-    justify-self: start;
+    display: none;
+    justify-content: flex-end;
+    align-items: end;
   }
 
   .mobile-nav a {
@@ -358,26 +429,385 @@ nav {
   }
 
   .menu-icon {
-    display: block; 
+    display: flex; 
+    margin-right: 10px; 
   }
 
-
-  .image-aboutme img,
-  .cv-image img {
-    margin-left: 0;
-    align-items: self-start;
+  .menu-icon:target + nav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
   }
 
-  .socials {
-    justify-content: center;
+  .menu-icon:target + nav span {
+    display: block;
+  } 
+
+  .main-aboutme {
+    flex-direction: row; 
+    text-align: center; 
   }
 
-  .socials a {
-    margin: 0 4px;
+  .image-aboutme img {
+    margin-right: 0; 
+    margin-left: 20px;
+    height: 75vh;
+    width: 300vw;
+
+  }
+
+  .text-aboutme {
+    font-size: 13px;
+    text-align: left; 
+    margin-left: 40px;
+  }
+  
+  .text-aboutme h1 {
+    font-size: 30px; 
+  }
+
+  .hobbies-para{
+    font-size: 10px;
+    
+    margin-top: 60px;
+
+  }
+  .hobbies-c {
+    flex-direction: row;
+    
+  }
+  .hobbies-vid{
+    height: 85vh;
+    width: 300vw;
+    margin-top: 40px;
+  }
+  .education-m{
+    height: 150vh;
+    
+  }
+  
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet Styles */
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  
+  header {
+    flex-direction: row;
+    align-items: center;
+  }
+  .logo-image {
+    align-items: start;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  nav span {
+    margin: 10px;
+  }
+
+  .main-aboutme {
+    flex-direction: row;
+  }
+
+  .text-aboutme {
+    font-size: 20px;
+    text-align: left; 
+    margin-left: 30px;
+  }
+
+  .text-aboutme h1 {
+    font-size: 30px;
+  }
+  .image-aboutme img {
+    margin-right: 0; 
+    height: 85vh;
+    width: 400vw;
+
+  }
+
+  .skill-m {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .container {
+    flex-direction: row;
+    margin-right: 0; 
+    height: 85vh;
+    
+  }
+
+  .education-details p{
+    font-size: 20px;
+  }
+  .education-details h1{
+    font-size: 30px;
+  }
+
+  .hobbies-para{
+    font-size: 12px;
+    margin-top: 70px;
+  }
+
+  .hobbies-vid{
+    height: 85vh;
+    width: 300vw;
+    margin-top: 50px;
+
+  }
+  .education-m{
+    height: 120vh;
+    
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive styles for Mobile portrait */
+
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) and (orientation: landscape) {
+  header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  nav span {
+    margin: 15px;
   }
 
   
+  .main-aboutme {
+    flex-direction: row; 
+    text-align: center;
+  }
+
+  .image-aboutme img {
+    margin-right: 20px; 
+    
+  }
+
+  .skill-m {
+    
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+  .container{
+    flex-direction: row;
+
+  }
+  .education-m{
+    height:220vh;
+  }
+
+  .container { 
+    height: 120vh;
+
+  
+  }
+  .hobbies-vid{
+    height: 105vh;
+    
+  }  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for desktop view */
+
+
+
+@media only screen and (min-width: 1025px) {
+
+  header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .main-aboutme {
+    flex-direction: row;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  nav span {
+    margin: 21px;
+  }
+  
+
+  
+
+  .text-aboutme {
+    text-align: left;
+    margin-left: 40px; 
+  }
+
+  .skill-m {
+    
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+  .container{
+    flex-direction: row;
+
+  }
+  .hobbies-c{
+    flex-direction: row;
+  }
+
+  .education-details p{
+    font-size: 20px;
+  }
+  .education-details h1{
+    font-size: 55px;
+  }
+  .hobbies-para{
+    font-size: 20px;
+  }
+  .hobbies-vid{
+    height: 100vh;
+    width: 300vw;
+    margin-top: 50px;
+
+  }
+  .education-m{
+    height: 80vh;
+
+  }
+
+  .container { 
+    height: 80vh;
+
+  
+}
+.image-aboutme img {
+  margin-right: 0; 
+  height: 80vh;
+  width: 200vw;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
