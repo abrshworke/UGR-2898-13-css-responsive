@@ -13,7 +13,7 @@ body {
 /* Header Section */
 
 
-header {
+.header {
   background-color: black;
   color: white;
   padding: 10px;
@@ -22,23 +22,23 @@ header {
   justify-content: space-between;
 }
 
-.logo-image {
+.header__logo-image {
   width: 70px;
   margin-bottom: 10px;
   align-items: self-start;
 }
 
-nav {
+.header__nav {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
 }
 
-nav span {
+.header__nav-span {
   margin: 5px 10px;
 }
 
-nav span a {
+.header__nav-span a {
   text-decoration: none;
   font-size: 16px;
   color: white;
@@ -49,16 +49,9 @@ nav span a {
 
 /* Main section */
 
-main {
+.main {
   padding: 15px;
 }
-
-
-
-
-
-
-
 
 
 
@@ -66,7 +59,7 @@ main {
 /* About Me Section */
 
 
-.main-aboutme {
+.main__main-aboutme {
   text-align: center;
   background-color: #3298db;
   border-radius: 10px;
@@ -79,18 +72,18 @@ main {
    
 }
 
-.image-aboutme img {
+.main__image-aboutme img {
   max-width: 100%; 
   height: auto;
   margin-bottom: 20px; 
 }
 
-.text-aboutme {
+.main__text-aboutme {
   font-size: 26px;
   text-align: center; 
 }
 
-.text-aboutme h1 {
+.main__text-aboutme h1 {
   font-size: 40px;
 }
 
@@ -109,22 +102,26 @@ main {
 
 
 
-.hobbies-c {
+.hobbies__hobbies-c {
   display: flex;
   flex-wrap: wrap; 
   background-color: #3498db;
-  border-radius: 16px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   
   
 }
 
-.hobbies-vid {
+.hobbies__hobbies-vid {
   flex: 1;
   
 }
 
-.hobbies-vid video {
-  max-width: 70%;
+.hobbies__hobbies-vid video {
+  max-width: 65%;
   height: auto;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -132,22 +129,22 @@ main {
   
 }
 
-.hobbies-subc {
+.hobbies__hobbies-subc {
   flex: 1;
   flex-direction: column;
 }
 
-.hobbies-para {
+.hobbies__hobbies-para {
   flex: 1;
   color: white;
   
 }
 
-.hobbies-img {
+.hobbies__hobbies-img {
   flex: 1;
 }
 
-.hobbies-img img {
+.hobbies__hobbies-img img {
   width: 70%; 
   
 }
@@ -165,7 +162,7 @@ main {
 
 
 
-.cv-m {
+.cv {
   display: flex;
   flex-direction: column;
   margin: 20px;
@@ -173,14 +170,15 @@ main {
   border-radius: 25px;
 }
 
-.cv-image img {
-  max-width: 100%;
+.cv__cv-image img {
+  max-width: 80%;
   height: auto;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-right: 30px;
+  margin-left: 40px;
 }
 
-.cv {
+.cv__cvr {
   font-size: 34px;
   text-align: center;
   color: white;
@@ -200,7 +198,7 @@ main {
 
 
 
-.education-m {
+.education {
   display: flex;
   flex-direction: column;
   padding: 15px;
@@ -213,7 +211,7 @@ main {
   margin-bottom: 20px;
 }
 
-.button-education {
+.education__button-education {
   font-size: 16px;
   background-color: white;
   color: #3298db;
@@ -225,18 +223,18 @@ main {
   margin-bottom: 20px;
 }
 
-.education-entry {
+.education__education-entry {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 100%;
 }
 
-.education-details p {
+.education__education-details p {
   color: #fff;
 }
 
-.a {
+.education__a {
   background-color: #2ecc71;
   color: #fff;
   padding: 8px 16px;
@@ -261,7 +259,7 @@ main {
 
 
 
-.skill-m {
+.skill {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,41 +269,43 @@ main {
   margin: 20px;
 }
 
-.container {
+.skill__container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.section {
+.skill__technical-skills,
+.skill__soft-skill,
+.skill__Tool-and-Technology {
   flex: 1;
   margin: 10px 0;
   padding: 10px;
   text-align: center;
 }
 
-.button-tech,
-.button-soft,
-.button-tool {
+.skill__button-tech,
+.skill__button-soft,
+.skill__button-tool {
   padding: 8px 15px;
   font-size: 16px;
 }
 
-.column {
+.skill__column {
   text-align: center;
   margin-top: 10px;
 }
 
-.column h3 {
+.skill__column h3 {
   font-size: 18px;
 }
 
-.column ul {
+.skill__column ul {
   list-style: none;
   padding: 5px;
 }
 
-.column li {
+.skill__column li {
   margin-bottom: 5px;
 }
 
@@ -331,18 +331,18 @@ footer {
   text-align: center;
 }
 
-.socials {
+.footer__socials {
   display: flex;
   justify-content: end;
   margin-top: 10px;
   cursor: none;
 }
 
-.socials a {
+.footer__socials a {
   margin: 0 10px;
 }
 
-.socials img {
+.footer__socials img {
   width: 30px;
   height: auto;
 }
@@ -361,7 +361,7 @@ footer {
 
 
 
-.menu-icon {
+.header__menu-icon {
   cursor: pointer;
   font-size: 36px;
   justify-self: end;
@@ -369,15 +369,15 @@ footer {
   display: none; 
 }
 
-.menu-icon:before {
+.header__menu-icon:before {
   content: '\2261';
 }
 
-nav {
+.header__nav {
   display: none;
 }
 
-.menu-icon:target + nav {
+.header__menu-icon:target + .header__nav {
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -406,49 +406,47 @@ nav {
 @media only screen and (max-width: 599px) {
 
 
-  header {
+  .header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
 
-  nav span {
+  .header__nav-span {
     display: none;
     flex: 1;
     margin: 0 10px;
   }
 
-  nav {
+  .header__nav {
     display: none;
     justify-content: flex-end;
     align-items: end;
   }
 
-  .mobile-nav a {
-    color: white;
-  }
+  
 
-  .menu-icon {
+  .header__menu-icon {
     display: flex; 
     margin-right: 10px; 
   }
 
-  .menu-icon:target + nav {
+  .header__menu-icon:target + .header__nav {
     display: flex;
     flex-direction: column;
     align-items: end;
   }
 
-  .menu-icon:target + nav span {
+  .header__menu-icon:target + .header__nav span {
     display: block;
   } 
 
-  .main-aboutme {
+  .main__main-aboutme {
     flex-direction: row; 
     text-align: center; 
   }
 
-  .image-aboutme img {
+  .main__image-aboutme img {
     margin-right: 0; 
     margin-left: 20px;
     height: 75vh;
@@ -456,36 +454,38 @@ nav {
 
   }
 
-  .text-aboutme {
+  .main__text-aboutme {
     font-size: 13px;
     text-align: left; 
     margin-left: 40px;
   }
   
-  .text-aboutme h1 {
+  .main__text-aboutme h1 {
     font-size: 30px; 
   }
 
-  .hobbies-para{
+  .hobbies__hobbies-para{
     font-size: 10px;
     
     margin-top: 60px;
 
   }
-  .hobbies-c {
+  .hobbies__hobbies-c {
     flex-direction: row;
     
   }
-  .hobbies-vid{
+  .hobbies__hobbies-vid{
     height: 85vh;
     width: 300vw;
     margin-top: 40px;
   }
-  .education-m{
+  .education{
     height: 150vh;
     
   }
-  
+  .cv{
+    height: 140vh;
+  }
   
 
 }
@@ -510,81 +510,84 @@ nav {
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   
-  header {
+  .header {
     flex-direction: row;
     align-items: center;
   }
-  .logo-image {
+  .header__logo-image {
     align-items: start;
   }
 
-  nav {
+  .header__nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
   }
 
-  nav span {
+  .header__nav-span {
     margin: 10px;
   }
 
-  .main-aboutme {
+  .main__main-aboutme {
     flex-direction: row;
   }
 
-  .text-aboutme {
+  .main__text-aboutme {
     font-size: 20px;
     text-align: left; 
     margin-left: 30px;
   }
 
-  .text-aboutme h1 {
+  .main__text-aboutme h1 {
     font-size: 30px;
   }
-  .image-aboutme img {
+  .main__image-aboutme img {
     margin-right: 0; 
     height: 85vh;
     width: 400vw;
 
   }
 
-  .skill-m {
+  .skill {
     flex-direction: row;
     justify-content: space-around;
   }
 
-  .container {
+  .skill__container {
     flex-direction: row;
     margin-right: 0; 
     height: 85vh;
     
   }
 
-  .education-details p{
+  .education__education-details p{
     font-size: 20px;
   }
-  .education-details h1{
+  .education__education-details h1{
     font-size: 30px;
   }
 
-  .hobbies-para{
+  .hobbies__hobbies-para{
     font-size: 12px;
     margin-top: 70px;
   }
 
-  .hobbies-vid{
+  .hobbies__hobbies-vid{
     height: 85vh;
     width: 300vw;
     margin-top: 50px;
 
   }
-  .education-m{
+  .education{
     height: 120vh;
-    
-
+  }
+  .cv{
+    height: 180vh;
   }
 }
+
+
 
 
 
@@ -604,56 +607,60 @@ nav {
 
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) and (orientation: landscape) {
-  header {
+  .header {
     flex-direction: row;
     align-items: center;
   }
 
-  nav {
+  .header__nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
   }
 
-  nav span {
+  .header__nav-span {
     margin: 15px;
   }
 
   
-  .main-aboutme {
+  .main__main-aboutme {
     flex-direction: row; 
     text-align: center;
   }
 
-  .image-aboutme img {
+  .main__image-aboutme img {
     margin-right: 20px; 
     
   }
 
-  .skill-m {
+  .skill {
     
     flex-direction: row;
     justify-content: space-around;
     
   }
-  .container{
+  .skill__container{
     flex-direction: row;
 
   }
-  .education-m{
+  
+  .education{
     height:220vh;
   }
 
-  .container { 
+  .skill__container { 
     height: 120vh;
 
   
   }
-  .hobbies-vid{
+  .hobbies__hobbies-vid{
     height: 105vh;
     
-  }  
+  } 
+  .cv{
+    height: 350vh;
+  }
 }
 
 
@@ -683,143 +690,78 @@ nav {
 
 @media only screen and (min-width: 1025px) {
 
-  header {
+  .header {
     flex-direction: row;
     align-items: center;
   }
 
-  .main-aboutme {
+  .main__main-aboutme {
     flex-direction: row;
   }
-  nav {
+  .header__nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
   }
 
-  nav span {
-    margin: 21px;
+  .header__nav-span {
+    margin: 25px;
   }
   
 
   
 
-  .text-aboutme {
+  .main__text-aboutme {
     text-align: left;
     margin-left: 40px; 
   }
 
-  .skill-m {
+  .skill {
     
     flex-direction: row;
     justify-content: space-around;
     
   }
-  .container{
+  .skill__container{
     flex-direction: row;
 
   }
-  .hobbies-c{
+  .hobbies__hobbies-c{
     flex-direction: row;
   }
 
-  .education-details p{
+  .education__education-details p{
     font-size: 20px;
   }
-  .education-details h1{
+  .education__education-details h1{
     font-size: 55px;
   }
-  .hobbies-para{
+  .hobbies__hobbies-para{
     font-size: 20px;
   }
-  .hobbies-vid{
+  .hobbies__hobbies-vid{
     height: 100vh;
     width: 300vw;
     margin-top: 50px;
 
   }
-  .education-m{
+  .education{
     height: 80vh;
 
   }
 
-  .container { 
+  .skill__container { 
     height: 80vh;
 
   
 }
-.image-aboutme img {
+.main__image-aboutme img {
   margin-right: 0; 
   height: 80vh;
   width: 200vw;
 
 }
 
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
